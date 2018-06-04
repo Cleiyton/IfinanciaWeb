@@ -3,6 +3,7 @@
     </style>
     
    <home></home>
+   <tfooter><tfooter>
 
     <!-- O state.exibicaoReducer.home é a variavel criada no initialState,
     Ao ser atualizada, a função subscribeStateTag(...) no script, é acionada atualizando o estado
