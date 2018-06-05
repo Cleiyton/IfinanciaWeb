@@ -2,7 +2,7 @@
     <style>
     </style>
     
-   <home></home>
+   <visaogeral></visaogeral>
 
     <!-- O state.exibicaoReducer.home é a variavel criada no initialState,
     Ao ser atualizada, a função subscribeStateTag(...) no script, é acionada atualizando o estado
