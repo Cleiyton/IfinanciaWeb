@@ -130,16 +130,5 @@
     </div>
   
   </section>
-
-  <section class="footer-site">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <p class="text-center">testestes</p>
-        </div>
-      </div>
-    </div>
-
-  </section>
   
 </home>
