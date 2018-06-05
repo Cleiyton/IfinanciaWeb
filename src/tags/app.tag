@@ -1,13 +1,10 @@
 <app>
     <style>
     </style>
-    
-<<<<<<< HEAD
-   <visaogeral></visaogeral>
-=======
+  
+   <navbar></navbar>
    <home></home>
-   <tfooter><tfooter>
->>>>>>> 7dd4634d595de0980a8f3bf6298e6718c2ad203a
+
 
     <!-- O state.exibicaoReducer.home é a variavel criada no initialState,
     Ao ser atualizada, a função subscribeStateTag(...) no script, é acionada atualizando o estado

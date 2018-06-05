@@ -10,6 +10,7 @@
       color: #000;
       padding-top:300px;
       padding-bottom: 300px;
+      margin-top:-30px;
 
     }
 
