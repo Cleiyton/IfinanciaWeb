@@ -4,6 +4,7 @@
   
    <navbar></navbar>
    <home></home>
+   <tfooter></tfooter>
 
 
     <!-- O state.exibicaoReducer.home é a variavel criada no initialState,

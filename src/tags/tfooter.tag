@@ -1,60 +1,51 @@
-<tfooter>
-    <style>
-		  footer{
-        background:#000;
-        padding: 50px 0px 20px 0px;
-        position: relative; 
-
-      }
-
-
-    </style>
-    <H1>{opts.valor}</H1>
-
-    <marquee>{opts.valor}</marquee>
-
-
-  <footer id="rodape">
-    <div class="container">
-      <!--row-->
-      <div class="row">
-
-          <nav class="col-md-8 navbar navbar-expand-lg  ml-auto">
-            
-                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Financias</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Novidades</a>
-                    </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre</a>
-                    </li>
-              
-                </ul>
-          </nav>
-
-
-          <div class="col-md-4">
-          <ul class="navbar-nav">
-            <li class=" nav-item"><a class-"nav-link" href="#" ><img src="imgs/instagram.png"></a></li>
-            <li class="nav-item"><a class="nav-link" href="#" ><img src="imgs/twitter.png" class="rounded float-left"></a></li>
-            <li class="nav-item"><a class="nav-link" href="#" ><img  src="imgs/facebook.png" class="rounded float-left"></a></li>
-          </ul>
-
-
-        </div>
-
-        
-
-      </div><!--row-->
-
-    </div>
-
-  </footer>
-
-
+<Tfooter>
+<footer class="py-5 bg-dark">
+			<div class="container">
 	
-</tfooter>
+				<div class="row">
+						<div class="col-sm-3 d-flex flex-row ">
+							<div><img src="img/logo2.png" class="" style="height: 90px;  width: 90px;"></div>
+						</div>
+							<div class="col-sm-3 d-flex justify-content-sm-center">
+
+
+							<div class="navbar-nav">
+									<a class="nav-item nav-link" href="#">Financeiros</a>
+									<a class="nav-item nav-link" href="#">Protocolo</a>
+									<a class="nav-item nav-link" href="#">Regulamento</a>
+										
+							</div>
+
+						</div>
+						<div class="col-sm-3 d-flex justify-content-sm-center">
+								<div class="navbar-nav">
+										<a class="nav-item nav-link" href="#">Sobre</a>
+										<a class="nav-item nav-link" href="#">Contatos</a>
+										<a class="nav-item nav-link" href="#">Desenvolvedores</a>
+											
+									</div>
+						</div>
+						<div class="col-sm-3 d-flex justify-content-sm-center">
+								<div class="twinter">
+										<a href="#" class="fa fa-facebook"></a>
+									</div>
+									<div class="">
+											<a href="#" class="fa fa-twitter"></a>
+									</div>
+									<div class="">
+											<a href="#" class="fa fa-instagram"></a>
+									</div>
+									<div class="">
+										<a href="#" class="fa fa-envelope-o"></a>
+									</div>
+								
+						</div>
+					</div>
+							
+					<div class="row d-flex flex-row-reverse">
+						<p class="mr-3">&copy; 2018 Ifinança</p>
+				</div>
+	
+			</div>
+</footer>
+</Tfooter>	
