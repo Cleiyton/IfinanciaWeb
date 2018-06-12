@@ -2,9 +2,7 @@
     <style>
     </style>
   
-   <navbar></navbar>
-   <home></home>
-   <tfooter></tfooter>
+  <carteira></carteira>
 
 
     <!-- O state.exibicaoReducer.home é a variavel criada no initialState,
