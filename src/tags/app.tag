@@ -1,16 +1,14 @@
 <app>
     <style>
     </style>
-  
-  <carteira></carteira>
-
-
-    <!-- O state.exibicaoReducer.home é a variavel criada no initialState,
-    Ao ser atualizada, a função subscribeStateTag(...) no script, é acionada atualizando o estado
-    da aplicação. 
-    Toda vez que o state é atualizado essa função é executada de forma automática, atualizando o DOM.-->
-
+ 
    
+  <navbar></navbar>
+    <home if='{state.exibicaoReducer.home}'></home>
+    <carteira if ='{state.exibicaoReducer.carteira}'></carteira>
+    <visaogeral if ='{state.exibicaoReducer.visaogeral}'></visaogeral>
+    
+    <Tfooter> </Tfooter>
     <script>
         this.mixin('state')
         this.mixin('reduxGlobal')

@@ -73,7 +73,7 @@
                    
                     <div class="text-center mt-5">
                         <h6>você ainda nao cadastrou, nenhuma conta</h6>
-                        <a href="#"> cadastre a, primeira conta</a>
+                        <a href="#/carteira"> cadastre a, primeira conta</a>
                     </div>
                 </div>
 

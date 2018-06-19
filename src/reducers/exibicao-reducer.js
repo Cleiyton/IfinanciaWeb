@@ -8,7 +8,8 @@ estará fora de contexto.*/
 
 const initialState = {
     home: true,
-    sobre: false
+    carteira: false,
+    visaogeral:false
   };
   
   export default function exibicaoReducer(state = initialState, action) {
@@ -21,12 +22,20 @@ const initialState = {
         const newState = { ...state, home: false };
         return newState;
       }
-      case "SOBRE_ON": {
-        const newState = { ...state, sobre: true };
+      case "CARTEIRA_ON": {
+        const newState = { ...state, carteira: true };
         return newState;
       }
-      case "SOBRE_OFF": {
-        const newState = { ...state, sobre: false };
+      case "CARTEIRA_OFF": {
+        const newState = { ...state, carteira: false };
+        return newState;
+      }
+      case "VISAOGERAL_ON": {
+        const newState = { ...state, visaogeral: true };
+        return newState;
+      }
+      case "VISAOGERAL_OFF": {
+        const newState = { ...state, visaogeral: false };
         return newState;
       }
       default: {

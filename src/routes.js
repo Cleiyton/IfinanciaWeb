@@ -46,10 +46,15 @@ export default function* handleRoute(action) {
       yield call(appControllers.homeController);
       break;
     }
-    case "sobre": {
-      yield call(appControllers.sobreController, action.payload);
+    case "carteira": {
+      yield call(appControllers.cadastraCarteiraController, action.payload);
       break;
     }
+    case "visaogeral": {
+      yield call(appControllers.visaogeralController, action.payload);
+      break;
+    }
+   
 
     default: {
       throw 404;
