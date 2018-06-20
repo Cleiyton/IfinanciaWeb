@@ -9,7 +9,10 @@ estará fora de contexto.*/
 const initialState = {
     home: true,
     carteira: false,
-    visaogeral:false
+    visaogeral:false,
+    cadastro:false,
+    lancamento:false
+    
   };
   
   export default function exibicaoReducer(state = initialState, action) {
@@ -36,6 +39,23 @@ const initialState = {
       }
       case "VISAOGERAL_OFF": {
         const newState = { ...state, visaogeral: false };
+        return newState;
+      }
+      case "CADASTRO_ON": {
+        const newState = { ...state, cadastro: true };
+        return newState;
+      }
+      case "CADASTRO_OFF": {
+        const newState = { ...state, cadastro: false };
+        return newState;
+      }
+
+      case "LANCAMENTO_ON": {
+        const newState = { ...state, lancamento: true };
+        return newState;
+      }
+      case "LANCAMENTO_OFF": {
+        const newState = { ...state, lancamento: false };
         return newState;
       }
       default: {

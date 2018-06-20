@@ -36,17 +36,32 @@
         }
     </style>
 
-    <H1>{opts.valor}</H1>
-    <marquee >{opts.valor}</marquee>
+    <h1></h1>
+    <marquee >{opts.email}</marquee>
     
-    <script>
-    
-    
-    </script>
+<script type="text/javascript">
+    opts.valor = localStorage.getItem("valor");
+    opts.conta = localStorage.getItem("conta");
+    opts.email = localStorage.getItem("emailusuario");
+
+    var axios = require('axios');
+    axios.get('http://localhost:3000/lancamento/list').then(function(response){
+       
+       var texto  = response.data;
+       console.log(texto);
+
+        
+}); 
+
+document.getElementById('teste1').innerHTML+=("lala");
+
+                 
+        
+</script>
 
 
         <div class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        
+            
         </div>
 
         <div class="container-fluid d-flex justify-content-center fundo">
@@ -59,15 +74,14 @@
                         </h5>
                     </div>
                     <div>
-                        <h1 class="text-center">Valor<h1>
-                        <h6 class="text-center">saldo geral</h6>
+                        <h1 class="text-center">Valor:{opts.valor}<h1>
                     </div>
                 </div>
                 
                 <div class="col-4 marg" id="convidar">
                     <div class="container">
                         <h5 class="mt-3">
-                            Minha conta
+                            Conta:{opts.conta}
                         </h5>
                     </div>
                    
@@ -77,18 +91,7 @@
                     </div>
                 </div>
 
-                <div class="col-4 marg conteudo">
-                    <div class="container">
-                        <h5 class="mt-3">
-                            Acesso Rapido
-                        </h5>
-                    </div>
-                   
-                    <div class="text-center mt-4">
-                        <h6 class="text-muted">você ainda nao cadastrou, nenhuma conta</h6>
-                        <a href="#"> cadastre a, primeira conta</a>
-                    </div>
-                </div>
+                
                 
                 <div class="col-4 marg conteudo">
                    <div class="container">
@@ -97,9 +100,13 @@
                         </h5>
                     </div>
                    
-                    <div class="text-center mt-4">
-                        <h6 class="text-muted">você nao possui contas a pagar pendente,</h6>
-                        <a href="#"> comece cadastrando algumas contas a pagar,</a>
+                    <div  class="text-center mt-4">
+                        <div id="teste1"> </div>
+
+                        <h6 class="text-muted">ji </h6>
+                        <h6 class="text-muted"> ji</h6>
+
+                        <a href="#/lancamento"> comece cadastrando algumas contas a pagar,</a>
                     </div>
                 </div>
 
@@ -143,18 +150,7 @@
                     </div>
                 </div>
                 
-                <div class="col-4 marg conteudo">
-                    <div class="container">
-                        <h5 class="mt-3">
-                            Minha conta
-                        </h5>
-                    </div>
-                   
-                    <div class="text-center mt-4">
-                        <h6 class="text-muted">você ainda nao cadastrou, nenhuma conta</h6>
-                        <a href="#"> cadastre a, primeira conta</a>
-                    </div>
-                </div>
+                
 
             </div>
             

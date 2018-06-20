@@ -18,12 +18,31 @@ export function* cadastraCarteiraController() {
   yield put({ type: "CARTEIRA_ON" });
   yield put({ type: "HOME_OFF" });
   yield put({ type: "VISAOGERAL_OFF" });
+  yield put({ type: "LANCAMENTO_OFF" });
+  const data = yield call(sagasAux.fetchAxios, 'http://localhost:3000/cadastro');
+  yield put({type: 'UPDATE_PESSOAS', payload: data});
+  
+}
+
+export function* cadastroController() {
+  yield put({ type: "CADASTRO_ON" });
+  yield put({ type: "HOME_ON" });
+  yield put({ type: "VISAOGERAL_OFF" });
+  const data = yield call(sagasAux.fetchAxios, 'http://localhost:3000/cadastro');
+  yield put({type: 'UPDATE_PESSOAS', payload: data});
   
 }
 
 export function* visaogeralController() {
   yield put({ type: "VISAOGERAL_ON" });
   yield put({ type: "HOME_OFF" });
-  yield put({ type: "CARTEIRA_OF" });
+  yield put({ type: "CARTEIRA_OFF" });
+  yield put({ type: "LANCAMENTO_OFF" });
+}
+export function* lancamentoController() {
+  yield put({ type: "LANCAMENTO_ON" });
+  yield put({ type: "HOME_OFF" });
+  yield put({ type: "CARTEIRA_OFF" });
+  yield put({ type: "VISAOGERAL_OFF" });
 }
 

@@ -3,8 +3,9 @@
     </style>
  
    
-  <navbar></navbar>
+    <cadastro></cadastro>
     <home if='{state.exibicaoReducer.home}'></home>
+    <lancamento if='{state.exibicaoReducer.lancamento}'></lancamento>
     <carteira if ='{state.exibicaoReducer.carteira}'></carteira>
     <visaogeral if ='{state.exibicaoReducer.visaogeral}'></visaogeral>
     

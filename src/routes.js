@@ -54,6 +54,17 @@ export default function* handleRoute(action) {
       yield call(appControllers.visaogeralController, action.payload);
       break;
     }
+    case "cadastro": {
+      yield call(appControllers.cadastroController, action.payload);
+      break;
+    }
+
+    case "lancamento": {
+      yield call(appControllers.lancamentoController, action.payload);
+      break;
+    }
+   
+
    
 
     default: {
