@@ -125,7 +125,7 @@
                var senha = $("#formGrouSenha").val();
        var axios = require('axios');
        
-       axios.post('http://localhost:3000/cadastro',{
+       axios.post('https://ifinancia.herokuapp.com/cadastro',{
          "name": nome,
          "email": email,
          "password": senha,
@@ -143,7 +143,7 @@
                var senha = $("#formGrouSenhaL").val();
        var axios = require('axios');
        
-       axios.get('http://localhost:3000/cadastro').then(function(response){
+       axios.get('https://ifinancia.herokuapp.com/cadastro').then(function(response){
         console.log(response.data);
 
     for (var i = 0;i<response.data.length;i++){

@@ -23,7 +23,7 @@
 
                     <div class="form-group">
                         <label>Saldo</label>
-                        <input type="number"id ="saldo"  class="form-control" placeholder="saldo"/>
+                        <input type="number" id ="saldo"  class="form-control" placeholder="saldo"/>
                     </div>
                     
                     <button type="button"  class="btn btn-success" onclick={cadastrar} >Cadastrar</button>
@@ -39,8 +39,9 @@
    cadastrar (e){
     var axios = require('axios');
     var i;
+    var valor;
        
-       axios.post('http://localhost:3000/carteira',{
+       axios.post('https://ifinancia.herokuapp.com/carteira',{
       "nameConta": document.getElementById('nome').value,
       "tipodaconta": "teste",
       "saldo": document.getElementById('saldo').value,
@@ -51,10 +52,10 @@
        });
 
 
-       axios.get('http://localhost:3000/carteira').then(function(response){
-       
+       axios.get('https://ifinancia.herokuapp.com/carteira').then(function(response){
+       valor = response.data;
     for (i = 0;i<response.data.length;i++){
-        var v = v+1;
+       console.log("af")
             
           }
             localStorage.setItem("valor",response.data[i-1]['saldo']);

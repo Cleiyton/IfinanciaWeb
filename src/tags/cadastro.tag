@@ -120,7 +120,7 @@
   salvarModificacoes (e){
     var axios = require('axios');
        
-       axios.post('http://localhost:3000/cadastro',{
+       axios.post('https://ifinancia.herokuapp.com/cadastro',{
       "name": document.getElementById('formGroupNome').value,
       "email": document.getElementById('formGroupEmail').value,
       "password": document.getElementById('formGroupSenha').value,
@@ -138,7 +138,7 @@
         var senha =  document.getElementById('formGroupSenhaL').value;
         var axios = require('axios');
        
-       axios.get('http://localhost:3000/cadastro').then(function(response){
+       axios.get('https://ifinancia.herokuapp.com/cadastro').then(function(response){
        
     for (var i = 0;i<response.data.length;i++){
       console.log("funfou2");

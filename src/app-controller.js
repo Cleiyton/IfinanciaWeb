@@ -19,7 +19,7 @@ export function* cadastraCarteiraController() {
   yield put({ type: "HOME_OFF" });
   yield put({ type: "VISAOGERAL_OFF" });
   yield put({ type: "LANCAMENTO_OFF" });
-  const data = yield call(sagasAux.fetchAxios, 'http://localhost:3000/cadastro');
+  const data = yield call(sagasAux.fetchAxios, 'https://ifinancia.herokuapp.com/cadastro');
   yield put({type: 'UPDATE_PESSOAS', payload: data});
   
 }
@@ -28,7 +28,7 @@ export function* cadastroController() {
   yield put({ type: "CADASTRO_ON" });
   yield put({ type: "HOME_ON" });
   yield put({ type: "VISAOGERAL_OFF" });
-  const data = yield call(sagasAux.fetchAxios, 'http://localhost:3000/cadastro');
+  const data = yield call(sagasAux.fetchAxios, 'https://ifinancia.herokuapp.com/cadastro');
   yield put({type: 'UPDATE_PESSOAS', payload: data});
   
 }

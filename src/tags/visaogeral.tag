@@ -36,7 +36,7 @@
         }
     </style>
 
-    <h1></h1>
+    <h1>ola</h1>
     <marquee >{opts.email}</marquee>
     
 <script type="text/javascript">
@@ -45,18 +45,14 @@
     opts.email = localStorage.getItem("emailusuario");
 
     var axios = require('axios');
-    axios.get('http://localhost:3000/lancamento/list').then(function(response){
+    axios.get('https://ifinancia.herokuapp.com/lancamento/list').then(function(response){
        
        var texto  = response.data;
        console.log(texto);
 
         
 }); 
-
-document.getElementById('teste1').innerHTML+=("lala");
-
-                 
-        
+                     
 </script>
 
 
@@ -101,10 +97,9 @@ document.getElementById('teste1').innerHTML+=("lala");
                     </div>
                    
                     <div  class="text-center mt-4">
-                        <div id="teste1"> </div>
 
-                        <h6 class="text-muted">ji </h6>
-                        <h6 class="text-muted"> ji</h6>
+                        <h6 class="text-muted">contas </h6>
+                        <h6 class="text-muted"> contas</h6>
 
                         <a href="#/lancamento"> comece cadastrando algumas contas a pagar,</a>
                     </div>

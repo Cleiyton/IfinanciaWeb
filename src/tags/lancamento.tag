@@ -179,7 +179,7 @@
     var axios = require('axios');
     var i;
        
-       axios.post('http://localhost:3000/lancamento/cadastro',{
+       axios.post('https://ifinancia.herokuapp.com/lancamento/cadastro',{
       "description": document.getElementById("formGroupDescricaoL").value,
       "valor": document.getElementById("formGroupValorL").value,
       "data": "2018-06-19",
@@ -203,7 +203,7 @@
     var axios = require('axios');
     var i;
        
-       axios.post('http://localhost:3000/metas/cadastro',{
+       axios.post('https://ifinancia.herokuapp.com/metas/cadastro',{
       "description": document.getElementById("formGroupDescricao").value,
       "valor": document.getElementById("formGroupValor").value,
       "data": "2018-06-19",
