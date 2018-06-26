@@ -41,28 +41,20 @@
     var i;
     var valor;
        
-       axios.post('https://ifinancia.herokuapp.com/carteira',{
+       axios.post('https://ifinancia.herokuapp.com/carteira/contas',{
       "nameConta": document.getElementById('nome').value,
       "tipodaconta": "teste",
-      "saldo": document.getElementById('saldo').value,
-      "active":"true"
+      "saldo": document.getElementById('saldo').value
     })
-         .then(function(retrsponse){
+         .then(function(response){
            alert("Cadastro efetuado");
+           window.location.href = "#/visaogeral";
+           
        });
 
 
-       axios.get('https://ifinancia.herokuapp.com/carteira').then(function(response){
-       valor = response.data;
-    for (i = 0;i<response.data.length;i++){
-       console.log("af")
+  
             
-          }
-            localStorage.setItem("valor",response.data[i-1]['saldo']);
-            localStorage.setItem("conta",response.data[i-1]['nameConta']);
-            window.location.href = "#/visaogeral";   
-       
-    }); 
    
    }
    
